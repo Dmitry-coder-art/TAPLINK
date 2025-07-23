@@ -2,3 +2,50 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 320px;
+  height: 563px;
+  font-family: "Inter", sans-serif;
+}
+
+.page-wrapper {
+  max-width: 320px;
+  margin: auto;
+  border-radius: 90px 90px 20px 20px;
+  box-shadow: 0px 0px 30.1px 19px rgba(0, 0, 0, 0.25);
+  background: rgb(242, 240, 240);
+  
+}
+
+.header {
+  padding-top: 12px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #ccc;
+  object-fit: fill;
+  background: url('../img/header_bg.png') no-repeat center  / cover ;
+  border-radius: 90px 90px 0px 0px;
+}
+
+.hello {
+  padding-left: 62px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 83px;
+  height: 13px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.hello-text {
+  padding: 18px 129px 126px 16px;
+  margin: auto;
+  font-size: 16px;
+  font-family: 'Times New Roman';
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
