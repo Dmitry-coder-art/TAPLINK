@@ -2,51 +2,53 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  background-color: rgb(242, 240, 240);
+}
+
 body {
   width: 320px;
   height: 563px;
-  font-family: "Inter", sans-serif;
+  margin: auto;
+  background-color: rgb(242, 240, 240);
+  border-radius: 90px 90px 20px 20px;
+  box-shadow: 0px 0px 30.1px 19px rgba(0, 0, 0, 0.25);
 }
 
 .page-wrapper {
-  max-width: 320px;
   margin: auto;
   border-radius: 90px 90px 20px 20px;
-  box-shadow: 0px 0px 30.1px 19px rgba(0, 0, 0, 0.25);
-  background: rgb(242, 240, 240);
-}
-
-.container {
-  min-width: 300px;
-  margin: auto;
 }
 
 .header {
-  padding-top: 12px;
+  display: flex;
   width: 100%;
   color: rgb(255, 255, 255);
-  background-color: #ccc;
+  border-radius: 90px 90px 0px 0px;
   object-fit: fill;
-  background: url('../img/header_bg.png') no-repeat center  / cover ;
+}
+
+.header__picture {
+  width: 320px;
+  height: 175px;
   border-radius: 90px 90px 0px 0px;
 }
 
 .hello {
-  padding-left: 62px;
+  position: absolute;
+  height: 13px; 
+  padding: 12px 175px 150px 46px;
   font-size: 20px;
-  font-weight: 700;
-  width: 83px;
-  height: 13px;
-  font-family: "Inter", sans-serif; 
+  font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .hello-text {
-  padding: 5px 129px 56px 16px;
+  position: absolute;
+  padding: 43px 16px;
   margin: auto;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
@@ -56,47 +58,103 @@ body {
 
 .user {
   position: absolute;
-  margin-top: -15px;
   width: 300px;
   height: 100px;
-  left: 10px;
+  margin-left: 10px;
   top: 125px;
   text-align: center;
-  border-radius: 10px;
-  padding-bottom: 20px;
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
   background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
 }
 
 .user-avatar {
   position: absolute;
-  margin-top: -125px;
-  object-fit: cover;
   width: 76px;
   height: 76px;
+  margin-top: -147px;
   left: 120px;
-  top: 72px;
-  box-sizing: border-box;
+  object-fit: cover;
   border: 2px solid #fffefe;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .user-name {
-margin-top: 8px;
-margin-bottom: 4px;
-color: rgb(0, 0, 0);
-font-family: "Inter", sans-serif;
-font-size: 20px;
-font-weight: bold;
-line-height: 23px;
-letter-spacing: 0%;
-text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .user-descption {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 15px;
+  margin-top: 0px;
+  margin-bottom: 0;
   color: #6a6a6a;
+  color: rgb(108, 106, 106);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
+
+.card {
+  position: absolute;
+  width: 300px;
+  height: 170px;
+  margin-top: 65px;
+  margin-left: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.buttons {
+  max-width: 260px;
+  margin: auto;
+  gap: 10px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  max-width: 260px;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 6px;
+  gap: 10px;
+  color: #fff;
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.button.vk {
+  background: rgb(76, 117, 163);
+}
+.button.tg {
+  background: rgb(39, 167, 231);
+}
+.button.yt {
+  background: rgb(231, 39, 39);
+}
+
+.button.hh {
+  background-color: #d6001c;
+}
+
